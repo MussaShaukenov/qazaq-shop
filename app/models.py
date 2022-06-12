@@ -11,6 +11,10 @@ class CompanyModel(models.Model):
         db_table = "companies"
         verbose_name = "company"
         verbose_name_plural = "companies"
+    
+    def __str__(self) -> str:
+        return self.name
+
 
 
 class ProductsModel(models.Model):
@@ -23,5 +27,8 @@ class ProductsModel(models.Model):
         db_table = "products"
         verbose_name = "product"
         verbose_name_plural = "products"
+
+    def __str__(self) -> str:
+        return self.product_name
 
     
