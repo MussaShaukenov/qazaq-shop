@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+header .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: center;
+  padding-left: 6.25%;
+}
+
+header .container div {
+  margin: 0 10px;
+  padding: 10px 0px;
+}
+
+header .container div input {
+  margin-top: 10px;
+}
+
+header .container .title-name {
+  text-align: center;
+  padding: 0 25%;
+  font-family: "Playball";
+  font-size: 48px;
+}
+
+header .container .icon-container {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .container .icon-container div img {
+  width: 25px;
+  height: 25px;
+}
+
+nav {
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 16.66667%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer {
+  color: whitesmoke;
+  background-color: #161616;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=main.css.map */

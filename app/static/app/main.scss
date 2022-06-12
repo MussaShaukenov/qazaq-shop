@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+$width: 100%;
+// font-family
+$ff: 'Playball';
+$border: 2px solid red;
+
+header {
+
+    .container {
+        width: $width;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        vertical-align: center;
+        padding-left: $width / 16;
+
+
+        div {
+            margin: 0 10px;
+            padding: 10px 0px;
+
+            input {
+                margin-top: 10px;
+            }
+        }
+
+        .title-name {
+            text-align: center;
+            padding: 0 $width/4;
+            font-family: $ff;
+            font-size: 48px;
+        }
+
+        .icon-container {
+            width: $width / 4;
+            display: flex;
+            flex-direction: row;
+            
+            div {
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+
+nav {
+    text-transform: uppercase;
+    padding-top: 20px;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin: 0 $width / 6;
+        justify-content: space-around;
+    }
+}
+
+footer {
+    color: whitesmoke;
+    background-color:#161616;
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
