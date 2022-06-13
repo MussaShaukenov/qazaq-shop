@@ -1,10 +1,9 @@
 import os
 from pathlib import Path
-import secret_data
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = secret_data.key
+SECRET_KEY = 'django-insecure-ki$vgk9p19(7@27lzydg$k3_o4)767=c_(dhd5(gi_y^@vv*&5'
 
 DEBUG = True
 

@@ -30,4 +30,30 @@ class ProductsModel(models.Model):
     def __str__(self) -> str:
         return self.product_name
 
+
+class UserModel(models.Model):
+    class Gender(models.TextChoices):
+        MALE = "1", "Male"
+        FEMALE = "2", "Female"
+    
+    def default_username(self):
+        username = self.first_name[0] + self.last_name
+        return username
+
+    first_name = models.CharField(max_length=32)
+    last_name = models.CharField(max_length=32)
+    username = models.CharField(max_length=32, default=default_username)
+    email = models.CharField(max_length=64)
+    gender = models.CharField(max_length=6, choices=Gender.choices)
+    password = models.CharField(max_length=32)
+
+    class Meta:
+        db_table = "users"
+        verbose_name = "user"
+        verbose_name_plural = "users"
+
+    def __str__(self) -> str:
+        return self.username
+    
+
     
