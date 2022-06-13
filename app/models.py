@@ -13,8 +13,7 @@ class CompanyModel(models.Model):
         verbose_name_plural = "companies"
     
     def __str__(self) -> str:
-        return self.name
-
+        return self.company_name
 
 
 class ProductsModel(models.Model):
