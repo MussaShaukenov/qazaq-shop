@@ -1,6 +1,6 @@
-Online E-Commerce website where only Kazakhstani brands are present.
+_Online E-Commerce website where only Kazakhstani brands are present.
 
-Used stack: Django 4.0
+Used stack: Django 4.0_
 
 important commands:
 
